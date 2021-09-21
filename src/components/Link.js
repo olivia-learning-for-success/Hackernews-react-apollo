@@ -46,7 +46,7 @@ const Link = (props) => {
           orderBy
         }
       });
-
+  
       const updatedLinks = feed.links.map((feedLink) => {
         if (feedLink.id === link.id) {
           return {
@@ -56,7 +56,7 @@ const Link = (props) => {
         }
         return feedLink;
       });
-
+  
       cache.writeQuery({
         query: FEED_QUERY,
         data: {
