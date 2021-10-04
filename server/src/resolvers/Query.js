@@ -25,5 +25,6 @@ async function feed(parent, args, context, info) {
 }
 
 module.exports = {
-  feed
+  feed,
+  users
 };

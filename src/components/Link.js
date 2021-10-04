@@ -46,7 +46,7 @@ const Link = (props) => {
           orderBy
         }
       });
-  
+      console.log({vote})
       const updatedLinks = feed.links.map((feedLink) => {
         if (feedLink.id === link.id) {
           return {

@@ -45,7 +45,7 @@ type User {
 type Link {
   id: ID!
   description: String!
-  url: String!
+  url: String! @deprecated(reason: "use field X instead")
   postedBy: User
   votes: [Vote!]!
   createdAt: DateTime!
